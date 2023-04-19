@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "skills": "Kenntnisse",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "hello": "Hallo!"
+  },
+
+  "aboutme": {
+    "title": "Über mich",
+    "text": "Meine Reise in die IT-Welt begann mit einer kleinen Website für ein Schulprojekt. Also schrieb ich die ersten paar Zeilen HTML- und CSS-Code. Da mir gefiel, wie aus ein paar Zeilen Text etwas entsteht, wollte ich mehr darüber lernen. Deshalb entschied ich mich, eine professionelle Ausbildung mit praktischen Projekten zu absolvieren. Mit Hilfe der geschulten Mitarbeiter konnte ich mein Wissen vertiefen und meine Fähigkeiten in JavaScript, Angular und objektorientierter Programmierung ausbauen. Mit diesen Techniken bin ich nun in der Lage, eigenständig und in der Gruppe einige Projekte auf die Beine zu stellen. Als motivierter Junior-Frontend-Entwickler möchte ich nun einen neuen Weg in meiner Karriere einschlagen.",
+    "button": "Reden wir"
+  },
+  "skills": {
+    "title": "Kenntnisse"
+  },
+  "portfolio": {
+    "subtitle": "In den Bereich finden Sie einige Beispiele meiner Arbeit - probiere Sie sie gerne aus.",
+    "join": "Kanban ist ein Prozessmanagement-Tool, das Sie bei der Organisation Ihrer Aufgaben und Arbeitsabläufe unterstützt. Es ist in Angular mit Material Design und Firebase geschrieben.",
+    "pokedex": "Ein Pokemondeck basierend auf der Rest-API. In dieser Pokémon-Galerie können Sie alle Pokémon nachschlagen oder sie nach Namen oder ihrem Index suchen. Es verwendet die Pokeapi.",
+    "elpolloloco": "Objektorientiertes Jump'n'Run-Spiel. El Pollo Loco ist ein lustiges kleines Jump'n'Run-Spiel, geschrieben in JavaScript. Hilf Pepe, Münzen und Tabascoflaschen zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "kingscup": "Ein Multiplayer-Spiel mit Angular und Firebase. Kings Cup ist ein Karten-Trinkspiel, bei dem man eine Aktion ausführen muss, je nachdem, welche Karte man zieht. Das Ziel von Kings Cup ist ganz einfach: viel trinken!"
+  },
+  "contact": {
+    "hello": "Sag Hallo!",
+    "title": "Sie haben ein neues Projekt ?",
+    "subtitle": "Lassen Sie uns über Ihre Ideen sprechen und sie erfolgreich in die Tat umsetzen!",
+    "name": "Name",
+    "nameerror": "Gibt bitte dein Name ein",
+    "email": "Email",
+    "emailerror": "Gibt bitte dein Email ein",
+    "message": "Nachricht",
+    "messageerror": "Die Nachricht ist leer",
+    "send": "Nachricht Senden",
+    "sendedTitle": "Vielen Dank für Ihre Nachricht!",
+    "sendedMessage": "Ich werde so schnell wie möglich auf Sie zurückkommen.",
+    "sendedErrorTitle": "Oh nein!",
+    "sendedErrorMessage": "Die Nachricht konnte nicht weitergeleitet werden. Bitte versuchen Sie es später noch einmal oder senden Sie mir eine E-Mail: mail@marco-scherf.de",
+    "thanks": "Ich danke Ihnen!"
+  }
+}

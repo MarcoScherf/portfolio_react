@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "about": "About me",
+    "skills": "My skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "hello": "Say Hi!"
+  },
+  "aboutme": {
+    "title": "About me",
+    "text": "My journey into the IT world began with a small website for a school project. So I wrote the first few lines of HTML and CSS code. Since I liked how something is created from a few lines of text, I wanted to learn more about it. That's why I decided to do a professional training with practical projects. With the help of the trained staff, I was able to deepen my knowledge and develop my skills in JavaScript, Angular and object-oriented programming. With these techniques, I am now able to set up some projects on my own and in a group. As a motivated junior frontend developer, I would now like to start a new path in my career.",
+    "button": "Let's talk"
+  },
+  "skills": {
+    "title": "My Skills"
+  },
+  "portfolio": {
+    "subtitle": "This page is a sample of my work - please feel free to try them out",
+    "join": "Kanban is a process management tool that helps you organize your tasks and workflows. It is written in Angular with Material Design and Firebase.",
+    "pokedex": "A Pokemondeck based on rest API. In this Pokémon gallery you can look up all the Pokémon or search them by name or their index. It uses the Pokeapi.",
+    "elpolloloco": "Object oriented jump and run game. El Pollo Loco is a fun little jump'n'run game written in JavaScript. Help Pepe find coins and tabasco bottles to fight the crazy hen.",
+    "kingscup": "A multiplayer game with angular and firebase. Kings Cup is a card drinking game in which an action must be taken depending on what card you draw. The goal of Kings Cup is quite simple: drink a lot!"
+  },
+  "contact": {
+    "hello": "Say Hi!",
+    "title": "Want to discuss a new project ?",
+    "subtitle": "A new project begins: Let's discuss your ideas and successfully bring them to life!",
+    "name": "Your Name",
+    "nameerror": "Your name is required",
+    "email": "Your Email",
+    "emailerror": "Your email is required",
+    "message": "Your message",
+    "messageerror": "Your message is empty",
+    "send": "Send Message",
+    "sendedTitle": "Thank you for your message!",
+    "sendedMessage": "I will get back to you as soon as possible.",
+    "sendedErrorTitle": "Oh no!",
+    "sendedErrorMessage": "The message could not be forwarded. Please try again later or send me an email: mail@marco-scherf.de",
+    "thanks": "Thank you!"
+  }
+}
