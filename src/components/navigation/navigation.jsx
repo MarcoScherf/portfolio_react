@@ -6,16 +6,13 @@ import { withTranslation } from "react-i18next";
 import i18n from "../../i18n";
 
 class Navigation extends Component {
+  state = {
+    isOpen: false,
+    isLanguageEN: false,
+  };
+
   componentDidMount() {
     AOS.init();
-  }
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false,
-      isLanguageEN: false,
-    };
-    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChangeLanguage = (lng) => {
@@ -27,11 +24,10 @@ class Navigation extends Component {
     i18n.changeLanguage(lng);
   };
 
-  handleClick() {
+  handleClick = () => {
     this.setState({ isOpen: !this.state.isOpen });
-  }
+  };
 
-  state = {};
   render() {
     const { t } = this.props;
     return (
@@ -89,7 +85,7 @@ class Navigation extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="assets/img/github.svg" alt="github" />
+                  <img src="./assets/img/github.svg" alt="github" />
                 </a>
                 <a href="/">
                   <img src="./assets/img/mail.svg" alt="email" />
