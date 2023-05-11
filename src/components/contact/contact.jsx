@@ -85,6 +85,7 @@ class Contact extends Component {
                   name="name"
                   value={form.name}
                   onChange={this.handleChange}
+                  placeholder=" "
                 />
                 <span>{t("contact.name")}</span>
                 <img
@@ -106,6 +107,7 @@ class Contact extends Component {
                   name="email"
                   value={form.email}
                   onChange={this.handleChange}
+                  placeholder=" "
                 />
                 <span>{t("contact.email")}</span>
                 <img
@@ -136,6 +138,7 @@ class Contact extends Component {
                   rows="10"
                   value={form.message}
                   onChange={this.handleChange}
+                  placeholder=" "
                 ></textarea>
                 <span>{t("contact.message")}</span>
                 <img

@@ -77,34 +77,18 @@ footer {
             @media (max-width: 1150px) {
               padding: 10px 0;
             }
-            &:hover {
-              border: 2px solid white;
-            }
+            &:hover,
             &:focus {
-              ~ span {
-                transition: all 225ms ease-in-out;
-                top: -10px;
-                background-color: black;
-              }
-              &.ng-invalid {
-                border: 2px solid white;
-              }
-            }
-            &.ng-valid {
-              ~ span {
-                top: -10px;
-                background-color: black;
-              }
-            }
-            &.ng-dirty,
-            &.ng-touched {
               border: 2px solid white;
-              ~ span {
-                top: -10px;
-                background-color: black;
-              }
+            }
+            &:focus + span,
+            &:not(:placeholder-shown) + span {
+              transition: all 225ms ease-in-out;
+              top: -8px;
+              background-color: black;
             }
           }
+
           img {
             position: absolute;
             top: 7px;
@@ -123,8 +107,8 @@ footer {
             line-height: 120%;
           }
           span {
-            transition: all 225ms ease-in-out;
             position: absolute;
+            padding: 0 8px;
             top: 10px;
             left: 10px;
             color: white;
@@ -134,8 +118,10 @@ footer {
             font-size: 16px;
             line-height: 120%;
             pointer-events: none;
+            transition: all 225ms ease-in-out;
           }
         }
+
         button {
           font-family: "Overpass";
           font-style: normal;
