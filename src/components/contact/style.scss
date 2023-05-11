@@ -1,0 +1,302 @@
+.hidden {
+  display: none !important;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0 50px 0;
+  background: url("../../../public/assets/img/menu_footer_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: clamp(275px, 80vw, 1800px);
+    position: relative;
+    .greeting {
+      font-family: "Syne";
+      font-size: 78px;
+      font-weight: 800;
+      transition: color 225ms ease-in-out;
+      width: fit-content;
+      cursor: default;
+      @media (max-width: 1150px) {
+        font-size: 2.6rem;
+      }
+      &:hover {
+        color: #00bc8f;
+      }
+    }
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-family: "Overpass";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: #00bc8f;
+      }
+      .subtitle {
+        font-family: "Overpass";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+        margin-top: 50px;
+
+        .input {
+          width: 50%;
+          position: relative;
+          @media (max-width: 1150px) {
+            width: 80%;
+          }
+
+          input,
+          textarea {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            border: unset;
+            border: 2px solid transparent;
+            border-bottom: 2px solid white;
+            outline: none;
+            @media (max-width: 1150px) {
+              padding: 10px 0;
+            }
+            &:hover {
+              border: 2px solid white;
+            }
+            &:focus {
+              ~ span {
+                transition: all 225ms ease-in-out;
+                top: -10px;
+                background-color: black;
+              }
+              &.ng-invalid {
+                border: 2px solid white;
+              }
+            }
+            &.ng-valid {
+              ~ span {
+                top: -10px;
+                background-color: black;
+              }
+            }
+            &.ng-dirty,
+            &.ng-touched {
+              border: 2px solid white;
+              ~ span {
+                top: -10px;
+                background-color: black;
+              }
+            }
+          }
+          img {
+            position: absolute;
+            top: 7px;
+            right: 0;
+          }
+          textarea {
+            resize: none;
+          }
+          .error {
+            margin-top: 10px;
+            color: red;
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+          }
+          span {
+            transition: all 225ms ease-in-out;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            pointer-events: none;
+          }
+        }
+        button {
+          font-family: "Overpass";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 23px;
+          line-height: 120%;
+          border: 4px solid white;
+          background-color: transparent;
+          padding: 20px 60px;
+          margin-bottom: 50px;
+          cursor: pointer;
+          transition: all 225ms ease-in-out;
+          color: white;
+          cursor: pointer;
+          transition: all 225ms ease-in-out;
+          &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
+          &.valid-form {
+            &:hover {
+              font-weight: 700;
+              padding: 20px 80px;
+            }
+          }
+        }
+      }
+    }
+    .desktop {
+      @media (max-width: 700px) {
+        display: none;
+      }
+      .arrow-up {
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+        transition: all 225ms ease-in-out;
+        cursor: pointer;
+        &:hover img:first-child {
+          transform: translateY(-22px);
+          transition: 0.255s ease-in-out;
+        }
+
+        img:first-child {
+          transform: translateY(0);
+          transition: 0.255s ease-in-out;
+        }
+
+        img:nth-child(2) {
+          transform: translateX(-22px);
+        }
+      }
+      .logo {
+        margin-bottom: 10px;
+        span {
+          font-family: "Syne";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 20px;
+        }
+      }
+      .container-copyright {
+        display: flex;
+        justify-content: space-between;
+        .copyright {
+          font-family: "Syne";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 23px;
+          line-height: 120%;
+        }
+        .social {
+          display: flex;
+          align-items: center;
+          gap: 50px;
+          img:hover {
+            transform: translateY(-10px);
+            transition: all 225ms ease-in-out;
+          }
+        }
+      }
+      .legal {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        font-family: "Overpass";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        span {
+          cursor: pointer;
+          &:hover {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .mobile {
+      display: none;
+      @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      .logo {
+        span {
+          font-family: "Syne";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 20px;
+        }
+      }
+      .copyright {
+        font-family: "Syne";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+      }
+      .legal {
+        margin-top: 20px;
+        font-family: "Overpass";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+      }
+    }
+  }
+  .sent-message {
+    display: flex;
+    justify-content: center;
+    .successfully,
+    .error {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      margin: 100px 50px;
+      border: 2px solid white;
+      padding: 0 50px;
+      @media (max-width: 750px) {
+        text-align: center;
+        margin: 50px 25px;
+        padding: 10px;
+      }
+      p {
+        font-family: "Overpass";
+        font-style: normal;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+  }
+}

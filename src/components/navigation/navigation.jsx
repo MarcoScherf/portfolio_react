@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AOS from "aos";
 import "./style.scss";
+import Scroll from "../../services/scroll";
 
 import { withTranslation } from "react-i18next";
 import i18n from "../../i18n";
@@ -68,10 +69,42 @@ class Navigation extends Component {
         </header>
         <div className={this.state.isOpen ? "nav menu-open" : "nav"}>
           <nav>
-            <div className="nav-link">{t("nav.about")}</div>
-            <div className="nav-link">{t("nav.skills")}</div>
-            <div className="nav-link">{t("nav.portfolio")}</div>
-            <div className="nav-link">{t("nav.contact")}</div>
+            <div
+              className="nav-link"
+              onClick={() => {
+                Scroll.scrollTo("about");
+                this.handleClick();
+              }}
+            >
+              {t("nav.about")}
+            </div>
+            <div
+              className="nav-link"
+              onClick={() => {
+                Scroll.scrollTo("skills");
+                this.handleClick();
+              }}
+            >
+              {t("nav.skills")}
+            </div>
+            <div
+              className="nav-link"
+              onClick={() => {
+                Scroll.scrollTo("projects");
+                this.handleClick();
+              }}
+            >
+              {t("nav.portfolio")}
+            </div>
+            <div
+              className="nav-link"
+              onClick={() => {
+                Scroll.scrollTo("contact");
+                this.handleClick();
+              }}
+            >
+              {t("nav.contact")}
+            </div>
           </nav>
           <div className="footer">
             <div className="footer-container">

@@ -5,6 +5,8 @@ import Navigation from "./components/navigation/navigation";
 import Home from "./components/home/home";
 import MySkills from "./components/myskills/myskills";
 import Aboutme from "./components/aboutme/aboutme";
+import Portfolio from "./components/portfolio/portfolio";
+import Contact from "./components/contact/contact";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <Navigation />
       <Home />
       <Aboutme />
-      <MySkills />
+      <MySkills  />
+      <Portfolio />
+      <Contact />
     </>
   );
 }

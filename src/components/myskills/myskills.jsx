@@ -20,7 +20,7 @@ class MySkills extends Component {
   render() {
     const { t } = this.props;
     return (
-      <section className="mySkills">
+      <section className="mySkills" id="skills">
         <div className="container">
           <h2 data-aos="zoom-in">{t("skills.title")}</h2>
           <div className="skills-icons">
@@ -34,7 +34,7 @@ class MySkills extends Component {
             ))}
           </div>
         </div>
-        <div className="arrow" data-aos="fade-down-right">
+        <div className="arrow" data-aos="fade-down">
           <img src="/assets/img/arrow_right.svg" alt="" />
         </div>
       </section>

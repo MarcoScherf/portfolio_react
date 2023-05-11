@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.scss";
 import AOS from "aos";
-
+import Scroll from "../../services/scroll";
 class Home extends Component {
   state = {};
 
@@ -11,9 +11,13 @@ class Home extends Component {
 
   render() {
     return (
-      <section className="home">
+      <section className="home" id="home">
         <div className="container">
-          <h2 data-aos="zoom-in" data-aos-duration="1000">
+          <h2
+            data-aos="zoom-in-down"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
             Frontend Developer
           </h2>
           <div className="name">
@@ -32,7 +36,11 @@ class Home extends Component {
           <div className="mail" data-aos="fade-right" data-aos-duration="1000">
             mail@marco-scherf.de
           </div>
-          <div className="scroll" data-aos="fade-left">
+          <div
+            className="scroll"
+            data-aos="fade-left"
+            onClick={() => Scroll.scrollTo("about")}
+          >
             <div className="img">
               <img src="./assets/img/arrow_down.svg" alt="" />
             </div>
